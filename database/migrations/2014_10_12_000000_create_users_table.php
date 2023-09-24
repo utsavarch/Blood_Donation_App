@@ -27,7 +27,7 @@ return new class extends Migration
             $table->string('zip_code')->nullable();
             $table->date('last_donation_date');
             $table->enum('role', ['Donor', 'Recipient']);
-            $table->string('profile_picture');
+            $table->string('bloodgroup_verification_doc');
             $table->rememberToken();
             $table->timestamps();
         });
